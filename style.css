@@ -24,7 +24,7 @@ header {
 .banner-title {
   font-size: 7rem;
   text-align: center;
-  color: #7e441d;
+  color: rgba(229, 113, 5, 0.438);
 }
 .choclate-text {
   text-shadow: 0.6rem 1rem 1.5rem #81583d;
@@ -111,13 +111,51 @@ header {
   padding: 0;
   z-index: 10000;
 }
-@media screen and (max-width: 778px) and (min-width: 577px) {
+@media screen and (max-width: 900px) and (min-width: 577px) {
   .banner-section {
     grid-template-columns: repeat(1, 1fr);
     gap: 3rem;
   }
   .banner-image-section {
-    max-width: 80rem;
     margin: 10rem auto;
+  }
+  .banner-image-section img {
+    width: 100%;
+  }
+  .banner-title {
+    font-size: 3rem;
+  }
+  .choclate-text {
+    font-size: 5rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  .banner-section {
+    max-width: 60rem;
+    margin: 2rem auto;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10rem;
+  }
+  .banner-image-section {
+    margin: 10rem auto;
+    padding: 1rem 2rem;
+  }
+  .img-1 {
+    left: -5rem;
+  }
+  .img-3 {
+    left: 4rem;
+  }
+  .img-1:hover {
+    left: 0;
+  }
+  .choclate-text {
+    font-size: 4rem;
+  }
+  .banner-title {
+    font-size: 3rem;
+  }
+  .btn {
+    transform: translate(20%);
   }
 }
