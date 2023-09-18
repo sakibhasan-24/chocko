@@ -87,7 +87,6 @@ header {
 }
 .img-1:hover {
   z-index: 10000;
-
   border: 2px solid brown;
   left: -10rem;
   padding: 0;
@@ -111,4 +110,14 @@ header {
   border: 2px solid brown;
   padding: 0;
   z-index: 10000;
+}
+@media screen and (max-width: 778px) and (min-width: 577px) {
+  .banner-section {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 3rem;
+  }
+  .banner-image-section {
+    max-width: 80rem;
+    margin: 10rem auto;
+  }
 }
