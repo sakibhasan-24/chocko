@@ -26,6 +26,7 @@ header {
   text-align: center;
   color: rgba(229, 113, 5, 0.438);
 }
+
 .choclate-text {
   text-shadow: 0.6rem 1rem 1.5rem #81583d;
   font-size: 10rem;
@@ -34,6 +35,22 @@ header {
   display: inline-block;
   color: #b2500af1;
   font-weight: bolder;
+  transform: translateY(0);
+  animation: chocklateText 3s;
+}
+@keyframes chocklateText {
+  0% {
+    color: #98470df1;
+    transform: translateY(-2rem);
+  }
+  50% {
+    color: #0b0501f1;
+    transform: translateY(3rem);
+  }
+  100% {
+    color: #b2500af1;
+    transform: translateY(2.5rem);
+  }
 }
 .banner-text {
   font-size: 2rem;
